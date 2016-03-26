@@ -11,7 +11,7 @@
   border: 1px solid transparent;
 }
 
-.product:hover {
+.product:hover .product-like-status {
   transform: scale(1.1);
   z-index: 1;
 }

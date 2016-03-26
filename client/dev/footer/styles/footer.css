@@ -1,9 +1,9 @@
 footer {
-  border-top: 5px solid goldenrod;
-  background-color: #eee;
+  background-color: #FF6773;
   padding: 20px 0;
 }
 
 footer h3 {
+  color: #fff;
   text-align: center;
 }
