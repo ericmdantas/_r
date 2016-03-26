@@ -8,23 +8,26 @@ header h1 {
   margin: 0;
   display: inline-block;
   padding: 15px 27px;
-  border: 10px solid #000;
   color: #000;
   border-radius: 100%;
   margin-top: 10px;
   transition: border .3s ease;
+  border: 3px solid #000;
 }
 
-header.topo {
+header.top {
   background-color: #fff;
   border-bottom: 1px solid gold;
   position: fixed;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   z-index: 3;
+  box-shadow: 0 -1px 0 #e5e5e5,
+              0 0 2px rgba(0,0,0,.12),
+              0 2px 4px rgba(0,0,0,.24);
 }
 
-header.topo h1 {
+header.top h1 {
   text-align: center;
   font-size: 20px;
   margin: 0 0 0 10px;
@@ -35,12 +38,13 @@ header.topo h1 {
   border-radius: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  transition: border .3s ease;
+  transition: border .5s ease;
 }
 
 @media (min-width: 900px) {
   header h1 {
     font-size: 99px;
     padding: 15px 45px;
+    border: 10px solid #000;
   }
 }

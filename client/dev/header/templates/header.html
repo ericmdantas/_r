@@ -1,3 +1,3 @@
-<header>
+<header scroll-watcher (topStatus)="topEvHandler($event)" [ngClass]="{top: !top}">
   <h1 [ngStyle]="{'border-color': color}">{{name}}</h1>
 </header>
