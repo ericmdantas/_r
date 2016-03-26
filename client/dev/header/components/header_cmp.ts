@@ -34,7 +34,11 @@ export class HeaderCmp implements OnInit {
     '#E5737D',
     '#369493',
     '#FFD292',
-    '#F8A69A'
+    '#F8A69A',
+    '#D9CAAD',
+    '#FFCA94',
+    '#CFEFEC',
+    '#81B2AC'
   ]
   color: string;
 
