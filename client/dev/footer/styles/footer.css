@@ -1,3 +1,7 @@
+footer p {
+  text-align: center;
+}
+
 footer {
-  background-color: red;
+  margin-top: 50px;
 }

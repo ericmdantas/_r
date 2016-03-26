@@ -1,0 +1,14 @@
+<div *ngFor="#p of productList;" class="products-container">
+  <div class="product">
+    <div class="product-image-container">
+      <img src="{{p.image}}" class="product-image"/>
+    </div>
+
+    <div class="product-image-likes">
+      <p class="product-likes">
+        <span class="fa fa-fw fa-heart-o not-liked" *ngIf="!p.liked"></span>
+        <span class="fa fa-fw fa-heart liked" *ngIf="p.liked"></span>
+      </p>
+    </div>
+  </div>
+</div>

@@ -8,5 +8,5 @@ import {
   styleUrls: ['client/dev/footer/styles/footer.css']
 })
 export class FooterCmp {
-
+  year: number = new Date().getFullYear();
 }

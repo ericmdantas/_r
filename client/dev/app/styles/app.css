@@ -1,3 +1,5 @@
 main {
-  background-color: yellow;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
 }

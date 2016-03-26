@@ -1,0 +1,48 @@
+.products-container {
+  display: flex;
+}
+
+.product {
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.product-image {
+  height: 333px;
+  width: 333px;
+}
+
+.product-likes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .4);
+  margin: 0;
+  font-size: 70px;
+}
+
+.product-likes .not-liked {
+  color: #fff;
+}
+
+.product-likes .liked {
+  color: gold;
+}
+
+html {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .products-container {
+    display: inline-flex;
+  }
+
+  .product {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
