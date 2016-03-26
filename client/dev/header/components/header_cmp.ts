@@ -4,9 +4,9 @@ import {
 
 @Component({
   selector: 'hheader',
-  templateUrl: 'client/header/header.html',
-  styleUrls: ['client/header/header.css']
+  templateUrl: 'client/dev/header/templates/header.html',
+  styleUrls: ['client/dev/header/styles/header.css']
 })
 export class HeaderCmp {
-  
+
 }

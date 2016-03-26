@@ -4,9 +4,9 @@ import {
 
 @Component({
   selector: 'ffooter',
-  templateUrl: 'client/footer/footer.html',
-  styleUrls: ['client/footer/footer.css']
+  templateUrl: 'client/dev/footer/templates/footer.html',
+  styleUrls: ['client/dev/footer/styles/footer.css']
 })
 export class FooterCmp {
-  
+
 }
