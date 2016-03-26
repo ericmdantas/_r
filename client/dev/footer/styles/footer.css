@@ -1,7 +1,9 @@
-footer p {
-  text-align: center;
+footer {
+  border-top: 5px solid goldenrod;
+  background-color: #eee;
+  padding: 20px 0;
 }
 
-footer {
-  margin-top: 50px;
+footer h3 {
+  text-align: center;
 }

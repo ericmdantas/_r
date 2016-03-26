@@ -1,11 +1,46 @@
+header {
+  text-align: center;
+}
+
 header h1 {
   text-align: center;
   font-size: 40px;
-  margin: 0 0 150px;
+  margin: 0;
+  display: inline-block;
+  padding: 15px 27px;
+  border: 10px solid #000;
+  color: #000;
+  border-radius: 100%;
+  margin-top: 10px;
+  transition: border .3s ease;
+}
+
+header.topo {
+  background-color: #fff;
+  border-bottom: 1px solid gold;
+  position: fixed;
+  width: 100%;
+  max-width: 1500px;
+  z-index: 3;
+}
+
+header.topo h1 {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  padding: 15px 22px;
+  border: 3px solid #000;
+  color: #000;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: border .3s ease;
 }
 
 @media (min-width: 900px) {
   header h1 {
     font-size: 99px;
+    padding: 15px 45px;
   }
 }

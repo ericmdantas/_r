@@ -1,35 +1,42 @@
 .products-container {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .product {
   position: relative;
   margin: 0 auto;
   cursor: pointer;
+  transition: transform .2s;
+  border: 1px solid transparent;
+}
+
+.product:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .product-image {
-  height: 333px;
-  width: 333px;
+  height: 400px;
+  width: 400px;
 }
 
 .product-likes {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .4);
   margin: 0;
   font-size: 70px;
 }
 
+.product-like-status {
+  transition: color 1s, transform .3s;
+}
+
 .product-likes .not-liked {
-  color: #fff;
+  color: #FFA030;
 }
 
 .product-likes .liked {
-  color: gold;
+  color: #FF6773;
+  text-shadow: 0 1px 5px red;
 }
 
 html {

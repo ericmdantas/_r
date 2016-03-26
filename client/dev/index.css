@@ -1,8 +1,13 @@
-html,
-body {
-    font-family: "Roboto";
+html {
+    background: url(assets/background.jpg);
 }
 
 body {
-  margin: 0;
+  font-family: "Roboto";
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 -1px 0 #e5e5e5,
+              0 0 2px rgba(0,0,0,.12),
+              0 2px 4px rgba(0,0,0,.24);
 }
