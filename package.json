@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "aliv --q --o client --pi client/dev"
   },
   "repository": {
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/ericmdantas/_r#readme",
   "dependencies": {
     "angular2": "^2.0.0-beta.12",
+    "express": "^4.13.4",
     "rxjs": "^5.0.0-beta.3",
     "systemjs": "^0.19.24"
   },
