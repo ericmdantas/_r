@@ -1,10 +1,10 @@
 <div *ngFor="#p of productList;" class="products-container">
-  <div class="product" (click)="p.addLikes()" [ngClass]="{'product-liked': p.liked}">
-    <div class="product-image-container">
+  <div class="product" [ngClass]="{'product-liked': p.liked}">
+    <div class="product-image-container" (click)="productClickedHandler(p);">
       <img src="{{p.image}}" class="product-image"/>
     </div>
 
-    <div class="product-image-likes">
+    <div class="product-image-likes" (click)="p.addLikes()">
       <p class="product-likes">
         <span class="fa fa-fw product-like-status"
               [ngClass]="{'not-liked': !p.liked,

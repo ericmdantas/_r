@@ -1,0 +1,66 @@
+.modal {
+  position: fixed;
+  z-index: 4;
+  background-color: transparent;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modal .img {
+  width: 100%;
+  height: 500px;
+}
+
+.modal .close {
+  position: absolute;
+  color: #FF6773;
+  font-size: 45px;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.modal .close:hover {
+  cursor: pointer;
+}
+
+.modal .modal-info {
+  margin-top: 0;
+  background-color: #fff;
+  padding: 10px 0 5px;
+}
+
+.modal .icone {
+  font-size: 55px;
+  margin: 0 0 15px;
+  cursor: pointer;
+  transition: transform .5s ease, color .5s ease;
+}
+
+.modal .icone:hover {
+  transform: scale(1.1);
+}
+
+.modal .icone-liked {
+  color: #FF6773;
+  text-shadow: 0 1px 5px red;
+}
+
+@media (min-width: 900px) {
+  .modal {
+    padding-top: 50px;
+  }
+
+  .modal .img {
+    width: 500px;
+  }
+}

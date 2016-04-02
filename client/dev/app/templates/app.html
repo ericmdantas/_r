@@ -1,5 +1,7 @@
 <hheader></hheader>
 <main>
-  <product-list></product-list>
+  <blanket #b (hideBlanket)="m.hideHandler();"></blanket>
+  <modal #m (hideModal)="b.hideHandler();" (showModal)="b.showHandler();"></modal>
+  <product-list #pl (productSelected)="m.setProduct($event);"></product-list>
 </main>
 <ffooter></ffooter>

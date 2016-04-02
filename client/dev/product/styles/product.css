@@ -1,3 +1,7 @@
+html {
+  display: none;
+}
+
 .products-container {
   display: flex;
   margin-bottom: 50px;
@@ -9,6 +13,8 @@
   cursor: pointer;
   transition: transform .2s;
   border: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 25px;
 }
 
 .product:hover .product-like-status {
@@ -17,8 +23,8 @@
 }
 
 .product-image {
-  height: 370px;
-  width: 370px;
+  height: 500px;
+  width: 100%;
 }
 
 .product-likes {
@@ -39,10 +45,6 @@
   text-shadow: 0 1px 5px red;
 }
 
-html {
-  display: none;
-}
-
 @media (min-width: 900px) {
   .products-container {
     display: inline-flex;
@@ -51,5 +53,11 @@ html {
   .product {
     margin-left: 10px;
     margin-bottom: 10px;
+    border-bottom: none;
+  }
+
+  .product-image {
+    height: 370px;
+    width: 370px;
   }
 }
