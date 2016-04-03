@@ -1,12 +1,11 @@
 <div class="modal" [hidden]="hide">
-  <div class="modal-container">
-    <span class="close fa fa-fw fa-remove" (click)="hideHandler()"></span>
+  <span class="close fa fa-fw fa-remove" (click)="hideHandler()"></span>
 
+  <div class="modal-container">
     <div class="modal-imagem">
       <img src="{{product.image}}" class="img"/>
     </div>
     <div class="modal-info">
-      <h2 class="info">{{product.name}}</h2>
       <h2 class="fa fa-fw icone"
           (click)="product.addLikes();"
           [ngClass]="{'icone-liked': product.liked,

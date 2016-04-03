@@ -1,5 +1,5 @@
 .modal {
-  position: fixed;
+  position: absolute;
   z-index: 4;
   background-color: transparent;
   width: 100%;
@@ -11,22 +11,21 @@
 
 .modal-container {
   position: relative;
-  max-width: 500px;
   margin: 0 auto;
 }
 
 .modal .img {
-  width: 100%;
+  width: 500px;
   height: 500px;
 }
 
 .modal .close {
   position: absolute;
-  color: #FF6773;
-  font-size: 45px;
+  color: #fff;
+  font-size: 65px;
   top: 0;
   right: 0;
-  background-color: #fff;
+  z-index: 5;
 }
 
 .modal .close:hover {
@@ -35,13 +34,14 @@
 
 .modal .modal-info {
   margin-top: 0;
-  background-color: #fff;
+  background-color: transparent;
   padding: 10px 0 5px;
+  color: #fff;
 }
 
 .modal .icone {
-  font-size: 55px;
-  margin: 0 0 15px;
+  font-size: 105px;
+  margin: 15px 0 15px;
   cursor: pointer;
   transition: transform .5s ease, color .5s ease;
 }
@@ -57,10 +57,11 @@
 
 @media (min-width: 900px) {
   .modal {
+    position: fixed;
     padding-top: 50px;
   }
 
   .modal .img {
-    width: 500px;
+    width: auto;
   }
 }
