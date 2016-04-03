@@ -1,6 +1,7 @@
 "use strict";
 var Product = (function () {
-    function Product(image) {
+    function Product(name, image) {
+        this.name = name;
         this.image = image;
         this.liked = false;
         this.likes = 0;

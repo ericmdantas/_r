@@ -6,7 +6,7 @@
       <img src="{{product.image}}" class="img"/>
     </div>
     <div class="modal-info">
-      <h2 class="info">Bolsa caseira</h2>
+      <h2 class="info">{{product.name}}</h2>
       <h2 class="fa fa-fw icone"
           (click)="product.addLikes();"
           [ngClass]="{'icone-liked': product.liked,

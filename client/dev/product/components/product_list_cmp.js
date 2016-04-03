@@ -8,17 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var core_1 = require('angular2/core');
 var product_1 = require('../models/product');
+var product_service_1 = require('../services/product_service');
 var ProductListCmp = (function () {
-    function ProductListCmp() {
+    function ProductListCmp(productService) {
+        this.productService = productService;
         this.productList = [];
         this.productSelected = new core_1.EventEmitter();
     }
     ProductListCmp.prototype.ngOnInit = function () {
-        for (var i = 0; i < 100; i++) {
-            this.productList.push(new product_1.Product('assets/purse.jpg'));
-        }
+        var _this = this;
+        this.productService
+            .getAll()
+            .subscribe(function (products) {
+            _this.productList = products;
+        });
     };
     ProductListCmp.prototype.productClickedHandler = function (p) {
         this.productSelected.emit(p);
@@ -31,9 +39,11 @@ var ProductListCmp = (function () {
         core_1.Component({
             selector: 'product-list',
             templateUrl: 'client/dev/product/templates/product_list.html',
-            styleUrls: ['client/dev/product/styles/product.css']
-        }), 
-        __metadata('design:paramtypes', [])
+            styleUrls: ['client/dev/product/styles/product.css'],
+            providers: [core_1.provide(product_1.Product, { useFactory: function () { return new product_1.Product('', ''); } }), product_service_1.ProductService]
+        }),
+        __param(0, core_1.Inject(product_service_1.ProductService)), 
+        __metadata('design:paramtypes', [Object])
     ], ProductListCmp);
     return ProductListCmp;
 }());
