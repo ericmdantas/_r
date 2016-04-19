@@ -21,8 +21,7 @@ export class ProductService implements IProductService {
         new Product('Necessaire box', 'assets/b4.jpg'),
         new Product('Necessaire box com forro em plástico', 'assets/b5.jpg'),
         new Product('Necessaire box', 'assets/b6.jpg'),
-        new Product('Porta treco', 'assets/b7.jpg'),
-        new Product('Necessaire box', 'assets/b8.jpg')
+        new Product('Porta treco', 'assets/b7.jpg')
       ]);
     });
   }

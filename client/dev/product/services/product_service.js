@@ -28,8 +28,7 @@ var ProductService = (function () {
                 new product_1.Product('Necessaire box', 'assets/b4.jpg'),
                 new product_1.Product('Necessaire box com forro em plástico', 'assets/b5.jpg'),
                 new product_1.Product('Necessaire box', 'assets/b6.jpg'),
-                new product_1.Product('Porta treco', 'assets/b7.jpg'),
-                new product_1.Product('Necessaire box', 'assets/b8.jpg')
+                new product_1.Product('Porta treco', 'assets/b7.jpg')
             ]);
         });
     };
