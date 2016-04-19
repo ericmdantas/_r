@@ -13,7 +13,7 @@ export class FooterCmp implements OnInit {
 
   ngOnInit() {
     let _data = new Date();
-    
-    this.data = `${_data.getDate()}/${_data.getMonth()}/${_data.getFullYear()}`;
+
+    this.data = `${_data.getDate()}/${_data.getMonth()+1}/${_data.getFullYear()}`;
   }
 }

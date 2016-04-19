@@ -14,7 +14,7 @@ var FooterCmp = (function () {
     }
     FooterCmp.prototype.ngOnInit = function () {
         var _data = new Date();
-        this.data = _data.getDate() + "/" + _data.getMonth() + "/" + _data.getFullYear();
+        this.data = _data.getDate() + "/" + (_data.getMonth() + 1) + "/" + _data.getFullYear();
     };
     FooterCmp = __decorate([
         core_1.Component({
