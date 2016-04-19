@@ -21,12 +21,15 @@ var ProductService = (function () {
     ProductService.prototype.getAll = function () {
         return new Observable_1.Observable(function (o) {
             o.next([
-                new product_1.Product('Bolsa', 'assets/b0.jpg'),
-                new product_1.Product('Bolsa', 'assets/b1.jpg'),
-                new product_1.Product('Bolsa', 'assets/b2.jpg'),
-                new product_1.Product('Bolsa', 'assets/b3.jpg'),
-                new product_1.Product('Bolsa', 'assets/b4.jpg'),
-                new product_1.Product('Bolsa', 'assets/b5.jpg')
+                new product_1.Product('Necessaire box', 'assets/b0.jpg'),
+                new product_1.Product('Necessaire box', 'assets/b1.jpg'),
+                new product_1.Product('Infinity scarf', 'assets/b2.jpg'),
+                new product_1.Product('Necessaire box', 'assets/b3.jpg'),
+                new product_1.Product('Necessaire box', 'assets/b4.jpg'),
+                new product_1.Product('Necessaire box com forro em plástico', 'assets/b5.jpg'),
+                new product_1.Product('Necessaire box', 'assets/b6.jpg'),
+                new product_1.Product('Porta treco', 'assets/b7.jpg'),
+                new product_1.Product('Necessaire box', 'assets/b8.jpg')
             ]);
         });
     };

@@ -55,10 +55,17 @@
   text-shadow: 0 1px 5px red;
 }
 
+.product-name {
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 @media (min-width: 900px) {
   .modal {
     position: fixed;
-    padding-top: 50px;
+    padding-top: 10px;
   }
 
   .modal .img {

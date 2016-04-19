@@ -14,12 +14,15 @@ export class ProductService implements IProductService {
   getAll():Observable<IProduct[]> {
     return new Observable((o) => {
       o.next([
-        new Product('Bolsa', 'assets/b0.jpg'),
-        new Product('Bolsa', 'assets/b1.jpg'),
-        new Product('Bolsa', 'assets/b2.jpg'),
-        new Product('Bolsa', 'assets/b3.jpg'),
-        new Product('Bolsa', 'assets/b4.jpg'),
-        new Product('Bolsa', 'assets/b5.jpg')
+        new Product('Necessaire box', 'assets/b0.jpg'),
+        new Product('Necessaire box', 'assets/b1.jpg'),
+        new Product('Infinity scarf', 'assets/b2.jpg'),
+        new Product('Necessaire box', 'assets/b3.jpg'),
+        new Product('Necessaire box', 'assets/b4.jpg'),
+        new Product('Necessaire box com forro em plástico', 'assets/b5.jpg'),
+        new Product('Necessaire box', 'assets/b6.jpg'),
+        new Product('Porta treco', 'assets/b7.jpg'),
+        new Product('Necessaire box', 'assets/b8.jpg')
       ]);
     });
   }
